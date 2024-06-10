@@ -9,11 +9,15 @@ h1{
     text-align: center;
 }
 
-body{
-    background-color: rgb(6, 0, 10);
-    font-family:'Fragment Mono', monospace;
-    color: antiquewhite;
+p{
+    text-align: center;
 }
+
+#p1{
+    text-decoration: underline;
+}
+
+
 
 nav {
     margin-top: 40px;
@@ -44,4 +48,28 @@ nav {
 .underline:hover::before {
     transform-origin: bottom left;
     transform: scaleX(1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: rgb(6, 0, 10);
+  font-family:'Fragment Mono', monospace;
+  color: antiquewhite;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 5rem;
+}
+.heading {
+  color: #eee;
+  text-transform: uppercase;
 }
