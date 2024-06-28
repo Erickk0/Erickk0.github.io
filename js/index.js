@@ -67,8 +67,13 @@ const strings = [
   'My Skills:\n' +
   'Java\n' +
   'Python\n' +
-  'HTML, CSS, Javascript\n' +
-  'SQL\n'
+  'CSharp\n' +
+  'HTML, CSS, Javascript, NodeJS\n' +
+  'SQL\n' +
+  'My Interests:\n' +
+  'AI\n' +
+  'Data Science\n' +
+  'Front-End\n'
 ];
 
 let counter = 0;
