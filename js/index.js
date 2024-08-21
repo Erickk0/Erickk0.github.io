@@ -71,6 +71,7 @@ const strings = [
   'HTML, CSS, Javascript, NodeJS\n' +
   'SQL\n' +
   'My Interests:\n' +
+  'Cyber Security\n' +
   'AI\n' +
   'Data Science\n' +
   'Front-End\n'
