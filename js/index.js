@@ -63,13 +63,14 @@ const resolver = {
 
 const strings = [
   'My name is Erick Zeiler, and I am currently a student at Hochschule Rhein-Main in Germany.\n' +
-  'I am in my fourth semester of studies. \n\n\n' +
+  'I am in my sixth semester of studies. \n\n\n' +
   'My Skills:\n' +
   'Java\n' +
   'Python\n' +
   'CSharp\n' +
   'HTML, CSS, Javascript, NodeJS\n' +
   'SQL\n' +
+  'REST APIs \n' +
   'My Interests:\n' +
   'Cyber Security\n' +
   'AI\n' +
