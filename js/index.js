@@ -24,12 +24,10 @@ const resolver = {
         if (iterations >= 0) {
           const nextOptions = Object.assign({}, options, {iterations: iterations - 1});
 
-          // Ensures partialString without the random character as the final state.
           if (iterations === 0) {
-            element.innerHTML = partialString; // Use innerHTML to interpret <br>
+            element.innerHTML = partialString; 
           } else {
-            // Replaces the last character of partialString with a random character
-            element.innerHTML = partialString.substring(0, partialString.length - 1) + randomCharacter(characters); // Use innerHTML to interpret <br>
+            element.innerHTML = partialString.substring(0, partialString.length - 1) + randomCharacter(characters); 
           }
 
           doRandomiserEffect(nextOptions, callback);
@@ -43,7 +41,7 @@ const resolver = {
       const resolveString = options.resolveString;
       const characters = options.characters;
       const offset = options.offset;
-      const partialString = resolveString.substring(0, offset).replace(/\n/g, '<br>'); // Replace \n with <br>
+      const partialString = resolveString.substring(0, offset).replace(/\n/g, '<br>'); 
       const combinedOptions = Object.assign({}, options, {partialString: partialString});
 
       doRandomiserEffect(combinedOptions, () => {
@@ -72,30 +70,24 @@ const strings = [
   'SQL\n' +
   'REST APIs \n' +
   'My Interests:\n' +
-  'Cyber Security\n' +
   'AI\n' +
   'Data Science\n' +
-  'Front-End\n'
+  'Game Development\n' +
+  'Quantum Computing\n' +
+  'Writing good Code\n'
 ];
 
 let counter = 0;
 
 const options = {
-  // Initial position
   offset: 0,
-  // Timeout between each random character
   timeout: 5,
-  // Number of random characters to show
   iterations: 10,
-  // Random characters to pick from
   characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='],
-  // String to resolve
-  resolveString: strings[counter].replace(/\n/g, '<br>'), // Replace \n with <br>
-  // The element
+  resolveString: strings[counter].replace(/\n/g, '<br>'), 
   element: document.querySelector('[data-target-resolver]')
 }
 
-// Callback function when resolve completes
 function callback() {
   setTimeout(() => {
     counter++;
@@ -104,7 +96,7 @@ function callback() {
       counter = 0;
     }
 
-    let nextOptions = Object.assign({}, options, {resolveString: strings[counter].replace(/\n/g, '<br>')}); // Replace \n with <br>
+    let nextOptions = Object.assign({}, options, {resolveString: strings[counter].replace(/\n/g, '<br>')}); 
     resolver.resolve(nextOptions, callback);
   }, 1000);
 }
