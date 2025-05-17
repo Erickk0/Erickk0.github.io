@@ -102,3 +102,4 @@ function callback() {
 }
 
 resolver.resolve(options, callback);
+
