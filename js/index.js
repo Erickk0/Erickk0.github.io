@@ -63,7 +63,7 @@ const strings = [
   'My name is Erick Zeiler, and I am currently a student at Hochschule Rhein-Main in Germany.\n' +
   'I am in my sixth semester of studies. \n\n\n' +
   'My Skills:\n' +
-  'kubernetes(k8s & k3s)'\n +
+  'kubernetes(k8s & k3s)\n' +
   'Java\n' +
   'Python\n' +
   'CSharp\n' +
