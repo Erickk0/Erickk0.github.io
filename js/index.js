@@ -71,6 +71,8 @@ const strings = [
   'SQL\n' +
   'REST APIs \n' +
   'My Interests:\n' +
+  'kubernetes (k8s & k3s)\n' +
+  'Git-Ops & Dev-Ops \n' +
   'AI\n' +
   'Data Science\n' +
   'Game Development\n' +
